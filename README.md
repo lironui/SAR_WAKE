@@ -31,7 +31,7 @@ The code is designed for batch processing of multiple SAR scenes and exporting:
 
 ```text
 .
-├── wake_test_parallel.py      # Main processing pipeline
+├── wake_detection.py      # Main processing pipeline
 ├── region_grow.py             # Region-growing wake extraction
 ├── search_range.py            # Wake and upstream search-region construction
 ├── point_location.py          # Geometric utility functions
@@ -46,7 +46,7 @@ The code is designed for batch processing of multiple SAR scenes and exporting:
 
 ## Main Modules
 
-### `wake_test_parallel.py`
+### `wake_detection.py`
 
 Main batch-processing script for Sentinel-1 scenes.
 This script:
@@ -75,7 +75,7 @@ using geometric constraints and wind direction.
 
 Provides geometric helper functions for point-in-polygon tests.
 
-### `wind_direction/wind_direction.py`
+### `wind_direction.py`
 
 Loads ERA5 wind data and computes wind speed and direction from 10 m wind components.
 
@@ -158,7 +158,7 @@ Please install SNAP first and configure the Python interface according to the of
 Run the main processing script:
 
 ```bash
-python wake_test_parallel.py
+python wake_detection.py
 ```
 
 Before running, update the following paths in the script as needed:
