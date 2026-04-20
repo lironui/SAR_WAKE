@@ -105,7 +105,7 @@ Supported formats:
 
 ### 3. Wind farm location file
 
-A YAML file (`wind_farms.yml`) is required to provide the geographic coordinates of each wind farm.
+The YAML file (`wind_farms.yml`) is required to provide the geographic coordinates of each wind farm.
 
 Example structure:
 
