@@ -225,25 +225,5 @@ To ensure reproducibility, users must prepare:
 
 If you use this code in academic work, please cite the corresponding paper.
 
----
 
-## License
 
-Please add an appropriate license before public release.
-
-````
-
----
-
-## requirements.txt
-
-```txt
-numpy
-opencv-python
-matplotlib
-Pillow
-xarray
-dask
-cfgrib
-pyyaml
-````
