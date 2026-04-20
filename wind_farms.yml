@@ -1,0 +1,673 @@
+wind_farms:
+    wf1:
+        name: 'Hornsea Project Two'
+        location: 'United Kingdom'
+        coordinates:
+            latitude: 53.91
+            longitude: 1.5518055555555557
+        capacity: 1386
+        turbine_number: 165
+        turbine_model: 'Siemens Gamesa 8.0-167 DD'
+        commissioning_data: 2022
+    wf2:
+        name: 'Hornsea Project One'
+        location: 'United Kingdom'
+        coordinates:
+            latitude: 53.885
+            longitude: 1.791
+        capacity: 1218
+        turbine_number: 174
+        turbine_model: 'Siemens Gamesa SWT-7.0-154'
+        commissioning_data: 2019
+    wf3:
+        name: 'Moray East'
+        location: 'United Kingdom'
+        coordinates:
+            latitude: 58.16708055555555
+            longitude: -2.6985194444444445
+        capacity: 950
+        turbine_number: 100
+        turbine_model: 'MHI Vestas V164 9.5 MW'
+        commissioning_data: 2022
+    wf4:
+        name: 'Triton Knoll'
+        location: 'United Kingdom'
+        coordinates:
+            latitude: 53.4
+            longitude: 0.9
+        capacity: 857
+        turbine_number: 90
+        turbine_model: 'MHI Vestas 9.5 MW'
+        commissioning_data: 2021
+    wf5:
+        name: 'Borssele 1&2'
+        location: 'Netherlands'
+        coordinates:
+            latitude: 51.70277777777778
+            longitude: 3.0761111111111115
+        capacity: 752
+        turbine_number: 94
+        turbine_model: 'Siemens Gamesa 8MW'
+        commissioning_data: 2020
+    wf6:
+        name: 'Borssele 3&4'
+        location: 'Netherlands'
+        coordinates:
+            latitude: 51.707
+            longitude: 2.9123888888888887
+        capacity: 731.5
+        turbine_number: 77
+        turbine_model: 'MHI Vestas V164 9.5MW'
+        commissioning_data: 2021
+    wf7:
+        name: 'East Anglia ONE'
+        location: 'United Kingdom'
+        coordinates:
+            latitude: 52.24805555555556
+            longitude: 2.506111111111111
+        capacity: 714
+        turbine_number: 102
+        turbine_model: 'Siemens Gamesa SWT-7.0-154'
+        commissioning_data: 2020
+    wf8:
+        name: 'Walney Extension'
+        location: 'United Kingdom'
+        coordinates:
+            latitude: 54.088055555555556
+            longitude: -3.7380555555555555
+        capacity: 659
+        turbine_number: 40+47
+        turbine_model: 'MHI-Vestas 8.25 MW'
+        commissioning_data: 2018
+    wf9:
+        name: 'London Array'
+        location: 'United Kingdom'
+        coordinates:
+            latitude: 51.64388888888889
+            longitude: 1.553611111111111
+        capacity: 630
+        turbine_number: 175
+        turbine_model: 'Siemens Gamesa SWT-3.6-120'
+        commissioning_data: 2013
+    wf10:
+        name: 'Kriegers Flak'
+        location: 'Denmark'
+        coordinates:
+            latitude: 55.016666666666666
+            longitude: 12.933333333333334
+        capacity: 605
+        turbine_number: 72
+        turbine_model: 'Siemens Gamesa SWT-8.4-167'
+        commissioning_data: 2021
+    wf11:
+        name: 'Gemini Wind Farm'
+        location: 'Netherlands'
+        coordinates:
+            latitude: 54.03611111111111
+            longitude: 5.963055555555556
+        capacity: 600
+        turbine_number: 150
+        turbine_model: 'Siemens Gamesa SWT-4.0'
+        commissioning_data: 2017
+    wf12:
+        name: 'Beatrice'
+        location: 'United Kingdom'
+        coordinates:
+            latitude: 58.13
+            longitude: -3.0700000000000003
+        capacity: 588
+        turbine_number: 84
+        turbine_model: 'Siemens Gamesa SWT-7.0-154'
+        commissioning_data: 2019
+    wf13:
+        name: 'Gode Wind (phases 1+2)'
+        location: 'Germany'
+        coordinates:
+            latitude: 54.06666666666667
+            longitude: 7.033333333333333
+        capacity: 582
+        turbine_number: 97
+        turbine_model: 'Siemens Gamesa SWT-6.0-154'
+        commissioning_data: 2017
+    wf14:
+        name: 'Gwynt y Môr'
+        location: 'United Kingdom'
+        coordinates:
+            latitude: 53.45
+            longitude: -3.5833333333333335
+        capacity: 576
+        turbine_number: 160
+        turbine_model: 'Siemens Gamesa SWT-3.6-107'
+        commissioning_data: 2015
+    wf15:
+        name: 'Race Bank'
+        location: 'United Kingdom'
+        coordinates:
+            latitude: 53.266666666666666
+            longitude: 0.8333333333333334
+        capacity: 573
+        turbine_number: 91
+        turbine_model: 'Siemens Gamesa SWT-6.0-154'
+        commissioning_data: 2018
+    wf16:
+        name: 'Greater Gabbard'
+        location: 'United Kingdom'
+        coordinates:
+            latitude: 51.88
+            longitude: 1.94
+        capacity: 504
+        turbine_number: 140
+        turbine_model: 'Siemens Gamesa SWT-3.6-107'
+        commissioning_data: 2012
+    wf17:
+        name: 'Jiangsu Qidong H1+H2'
+        location: 'China'
+        coordinates:
+            latitude: 32.12
+            longitude: 122.16000000000001
+        capacity: 503
+        turbine_number: 84
+        turbine_model: 'Shanghai Electric'
+        commissioning_data: 2021
+    wf18:
+        name: 'CGN Shanwei Jiazi I'
+        location: 'China'
+        coordinates:
+            latitude: 0
+            longitude: 0
+        capacity: 503
+        turbine_number: 78
+        turbine_model: 'MySE6.45-180'
+        commissioning_data: 2022
+    wf19:
+        name: 'Hohe See'
+        location: 'Germany'
+        coordinates:
+            latitude: 54.43333333333333
+            longitude: 6.316666666666666
+        capacity: 497
+        turbine_number: 71
+        turbine_model: 'Siemens Gamesa SWT-7.0-154'
+        commissioning_data: 2019
+    wf20:
+        name: 'Borkum Riffgrund 2'
+        location: 'Germany'
+        coordinates:
+            latitude: 53.95194444444445
+            longitude: 6.4880555555555555
+        capacity: 450
+        turbine_number: 56
+        turbine_model: 'MHI Vestas V164-8.0 MW'
+        commissioning_data: 2019
+    wf21:
+        name: 'Horns Rev 3'
+        location: 'Denmark'
+        coordinates:
+            latitude: 55.81666666666667
+            longitude: 7.7
+        capacity: 407
+        turbine_number: 49
+        turbine_model: 'MHI Vestas V164-8.3 MW'
+        commissioning_data: 2019
+    wf22:
+        name: 'CGN Shanwei Jiazi II'
+        location: 'China'
+        coordinates:
+            latitude: 0
+            longitude: 0
+        capacity: 403
+        turbine_number: 62
+        turbine_model: 'MySE6.45-180'
+        commissioning_data: 2022
+    wf23:
+        name: 'Dudgeon'
+        location: 'United Kingdom'
+        coordinates:
+            latitude: 53.24888888888889
+            longitude: 1.39
+        capacity: 402
+        turbine_number: 67
+        turbine_model: 'Siemens Gamesa SWT-6.0-154'
+        commissioning_data: 2017
+    wf24:
+        name: 'Veja Mate'
+        location: 'Germany'
+        coordinates:
+            latitude: 54.316944444444445
+            longitude: 5.870833333333334
+        capacity: 402
+        turbine_number: 67
+        turbine_model: 'Siemens Gamesa SWT-6.0-154'
+        commissioning_data: 2017
+    wf25:
+        name: 'Anholt'
+        location: 'Denmark'
+        coordinates:
+            latitude: 56.6
+            longitude: 11.209999999999999
+        capacity: 400
+        turbine_number: 111
+        turbine_model: 'Siemens Gamesa SWT-3.6-120'
+        commissioning_data: 2013
+    wf26:
+        name: 'BARD Offshore 1'
+        location: 'Germany'
+        coordinates:
+            latitude: 54.36666666666667
+            longitude: 5.983333333333333
+        capacity: 400
+        turbine_number: 80
+        turbine_model: 'BARD 5.0MW'
+        commissioning_data: 2013
+    wf27:
+        name: 'Global Tech I [de]'
+        location: 'Germany'
+        coordinates:
+            latitude: 54.5
+            longitude: 6.358333333333333
+        capacity: 400
+        turbine_number: 80
+        turbine_model: 'Areva Multibrid M5000 5.0MW'
+        commissioning_data: 2015
+    wf28:
+        name: 'Rampion'
+        location: 'United Kingdom'
+        coordinates:
+            latitude: 50.666666666666664
+            longitude: -0.1
+        capacity: 400
+        turbine_number: 116
+        turbine_model: 'MHI Vestas V112-3.45 MW'
+        commissioning_data: 2018
+    wf29:
+        name: 'Binhai North H2'
+        location: 'China'
+        coordinates:
+            latitude: 34.5
+            longitude: 120.33333333333333
+        capacity: 400
+        turbine_number: 100
+        turbine_model: 'Siemens Gamesa SWT-4.0-120'
+        commissioning_data: 2018
+    wf30:
+        name: 'CGN Yangjiang Nanpeng Island'
+        location: 'China'
+        coordinates:
+            latitude: 21.5486
+            longitude: 112.1877
+        capacity: 400
+        turbine_number: 75
+        turbine_model: 'Mingyang MY-5.5 MW'
+        commissioning_data: 2020
+    wf31:
+        name: 'CTGNE Yangjiang Shapa - phase II'
+        location: 'China'
+        coordinates:
+            latitude: 21.358
+            longitude: 111.6085
+        capacity: 400
+        turbine_number: 62
+        turbine_model: 'Mingyang MySE6.45-180'
+        commissioning_data: 2021
+    wf32:
+        name: 'Rudong H6'
+        location: 'China'
+        coordinates:
+            latitude: 32.6639
+            longitude: 121.8069
+        capacity: 400
+        turbine_number: 100
+        turbine_model: 'Siemens Gamesa SWT-4.0-146'
+        commissioning_data: 2022
+    wf33:
+        name: 'Rudong H10'
+        location: 'China'
+        coordinates:
+            latitude: 32.3452
+            longitude: 121.8094
+        capacity: 400
+        turbine_number: 100
+        turbine_model: 'Siemens Gamesa SWT-4.0-146'
+        commissioning_data: 2022
+    wf34:
+        name: 'SPIC Rudong H7'
+        location: 'China'
+        coordinates:
+            latitude: 32.8321
+            longitude: 121.849
+        capacity: 400
+        turbine_number: 100
+        turbine_model: 'Siemens Gamesa SWT-4.0-146'
+        commissioning_data: 2021
+    wf35:
+        name: 'SPIC Rudong H4'
+        location: 'China'
+        coordinates:
+            latitude: 32.6645
+            longitude: 121.6009
+        capacity: 400
+        turbine_number: 100
+        turbine_model: 'Siemens Gamesa SWT-4.0-146'
+        commissioning_data: 2021
+    wf36:
+        name: 'Merkur'
+        location: 'Germany'
+        coordinates:
+            latitude: 54.03333333333333
+            longitude: 6.55
+        capacity: 396
+        turbine_number: 66
+        turbine_model: 'GE Haliade 150-6 MW'
+        commissioning_data: 2019
+    wf37:
+        name: 'West of Duddon Sands'
+        location: 'United Kingdom'
+        coordinates:
+            latitude: 53.98388888888889
+            longitude: -3.463888888888889
+        capacity: 389
+        turbine_number: 108
+        turbine_model: 'Siemens Gamesa SWT-3.6-120'
+        commissioning_data: 2014
+    wf38:
+        name: 'Arkona [de]'
+        location: 'Germany'
+        coordinates:
+            latitude: 54.782
+            longitude: 14.121
+        capacity: 385
+        turbine_number: 60
+        turbine_model: 'Siemens Gamesa SWT-6.0-154'
+        commissioning_data: 2019
+    wf39:
+        name: 'Windpark Fryslân [nl]'
+        location: 'Netherlands'
+        coordinates:
+            latitude: 53.0
+            longitude: 5.266666944444444
+        capacity: 382
+        turbine_number: 89
+        turbine_model: 'Siemens Gamesa SWT-4.3-130'
+        commissioning_data: 2021
+    wf40:
+        name: 'Norther Offshore Wind Farm'
+        location: 'Belgium'
+        coordinates:
+            latitude: 51.52777777777778
+            longitude: 3.0319444444444446
+        capacity: 370
+        turbine_number: 44
+        turbine_model: 'Vestas V164-8.4 MW'
+        commissioning_data: 2019
+    wf41:
+        name: 'Walney (phases 1&2)'
+        location: 'United Kingdom'
+        coordinates:
+            latitude: 54.04388888888889
+            longitude: -3.5219444444444443
+        capacity: 367
+        turbine_number: 102
+        turbine_model: 'Siemens Gamesa SWT-3.6-107'
+        commissioning_data: 2012
+    wf42:
+        name: 'Galloper'
+        location: 'United Kingdom'
+        coordinates:
+            latitude: 51.88
+            longitude: 1.94
+        capacity: 353
+        turbine_number: 56
+        turbine_model: 'Siemens Gamesa SWT-6.0-154'
+        commissioning_data: 2018
+    wf43:
+        name: 'Wikinger'
+        location: 'Germany'
+        coordinates:
+            latitude: 54.83388888888889
+            longitude: 14.068055555555555
+        capacity: 350
+        turbine_number: 70
+        turbine_model: 'Adwen AD 5-135'
+        commissioning_data: 2018
+    wf44:
+        name: 'Rudong H2'
+        location: 'China'
+        coordinates:
+            latitude: 32.8226
+            longitude: 121.6717
+        capacity: 350
+        turbine_number: 70
+        turbine_model: 'Haizhuang H171-5.0MW'
+        commissioning_data: 2022
+    wf45:
+        name: 'Nordsee One'
+        location: 'Germany'
+        coordinates:
+            latitude: 53.96666666666667
+            longitude: 6.8
+        capacity: 332
+        turbine_number: 54
+        turbine_model: 'Senvion 6.2M126'
+        commissioning_data: 2017
+    wf46:
+        name: 'Thorntonbank (phases 1–3)'
+        location: 'Belgium'
+        coordinates:
+            latitude: 51.55
+            longitude: 2.9333333333333336
+        capacity: 325
+        turbine_number: 6+48
+        turbine_model: 'Senvion 5MW'
+        commissioning_data: 2013
+    wf47:
+        name: 'Sheringham Shoal'
+        location: 'United Kingdom'
+        coordinates:
+            latitude: 53.11666666666667
+            longitude: 1.1333333333333333
+        capacity: 315
+        turbine_number: 88
+        turbine_model: 'Siemens Gamesa SWT-3.6-107'
+        commissioning_data: 2012
+    wf48:
+        name: 'Borkum Riffgrund 1 [de]'
+        location: 'Germany'
+        coordinates:
+            latitude: 53.96666666666667
+            longitude: 6.55
+        capacity: 312
+        turbine_number: 78
+        turbine_model: 'Siemens Gamesa SWT-4.0-120'
+        commissioning_data: 2015
+    wf49:
+        name: 'Rentel [de]'
+        location: 'Belgium'
+        coordinates:
+            latitude: 51.591
+            longitude: 2.9440000000000004
+        capacity: 308.7
+        turbine_number: 42
+        turbine_model: 'Siemens Gamesa SWT-7.0-154'
+        commissioning_data: 2019
+    wf50:
+        name: 'SPIC Jiangsu Dafeng'
+        location: 'China'
+        coordinates:
+            latitude: 33.514
+            longitude: 121.105
+        capacity: 302.4
+        turbine_number: 72
+        turbine_model: 'Envision 4.2MW'
+        commissioning_data: 2018
+    wf51:
+        name: 'Dongtai Four'
+        location: 'China'
+        coordinates:
+            latitude: 33.003
+            longitude: 121.381
+        capacity: 302.4
+        turbine_number: 63+10
+        turbine_model: 'Siemens Gamesa SWT-4.0-130'
+        commissioning_data: 2019
+    wf52:
+        name: 'Longyuan Jiangsu Dafeng H4'
+        location: 'China'
+        coordinates:
+            latitude: 33.2358
+            longitude: 121.2404
+        capacity: 302.4
+        turbine_number: 47
+        turbine_model: '47 x GW184-6.45MW'
+        commissioning_data: 2021
+    wf53:
+        name: 'Amrumbank West'
+        location: 'Germany'
+        coordinates:
+            latitude: 54.5
+            longitude: 7.8
+        capacity: 302
+        turbine_number: 80
+        turbine_model: 'Siemens Gamesa SWT-3.6-120'
+        commissioning_data: 2015
+    wf54:
+        name: 'Datang Jiangsu Binhai'
+        location: 'China'
+        coordinates:
+            latitude: 34.259
+            longitude: 120.576
+        capacity: 301.8
+        turbine_number: 50+46
+        turbine_model: 'Mingyang MySE3.0-135'
+        commissioning_data: 2019
+    wf55:
+        name: 'Thanet'
+        location: 'United Kingdom'
+        coordinates:
+            latitude: 51.43333333333333
+            longitude: 1.6333333333333333
+        capacity: 300
+        turbine_number: 100
+        turbine_model: 'Vestas V90-3.0MW'
+        commissioning_data: 2010
+    wf56:
+        name: 'Huaneng Rudong'
+        location: 'China'
+        coordinates:
+            latitude: 32.680
+            longitude: 121.323
+        capacity: 300
+        turbine_number: 38+19+1+12
+        turbine_model: 'Siemens Gamesa 4.0MW'
+        commissioning_data: 2017
+    wf57:
+        name: 'Jiangsu Longyuan Chiang Sand'
+        location: 'China'
+        coordinates:
+            latitude: 32.816
+            longitude: 121.516
+        capacity: 300
+        turbine_number: 75
+        turbine_model: 'Envision EN136/4.0 MW'
+        commissioning_data: 2018
+    wf58:
+        name: 'Laoting Bodhi Island'
+        location: 'China'
+        coordinates:
+            latitude: 38.986
+            longitude: 118.804
+        capacity: 300
+        turbine_number: 75
+        turbine_model: 'Siemens Gamesa SWT-4.0-130'
+        commissioning_data: 2020
+    wf59:
+        name: 'Zhanjiang Xuwen-South'
+        location: 'China'
+        coordinates:
+            latitude: 20.558
+            longitude: 110.755
+        capacity: 300
+        turbine_number: 47
+        turbine_model: '47 x GW171-6.45MW'
+        commissioning_data: 2022
+    wf60:
+        name: 'Yuedian Yangjiang Shapa'
+        location: 'China'
+        coordinates:
+            latitude: 21.359972222222222
+            longitude: 111.60997222222223
+        capacity: 300
+        turbine_number: 47
+        turbine_model: '47 x MySE6.45-180'
+        commissioning_data: 2022
+    wf61:
+        name: 'Zhejiang Jiaxing 2'
+        location: 'China'
+        coordinates:
+            latitude: 30.5819
+            longitude: 121.3358
+        capacity: 300
+        turbine_number: 50
+        turbine_model: '50 x SWT-6.0-154'
+        commissioning_data: 2021
+    wf62:
+        name: 'Rudong H5'
+        location: 'China'
+        coordinates:
+            latitude: 32.7361
+            longitude: 121.7532
+        capacity: 300
+        turbine_number: 75
+        turbine_model: '75 x SWT-4.0-146'
+        commissioning_data: 2021
+    wf63:
+        name: 'Dafeng H6'
+        location: 'China'
+        coordinates:
+            latitude: 33.4333
+            longitude: 121.3783
+        capacity: 300
+        turbine_number: 47
+        turbine_model: '47 x GW184-6.45MW'
+        commissioning_data: 2021
+    buoy1:
+        name: '42020'
+        coordinates:
+            latitude: 26.968
+            longitude: -96.693
+        wind_height: 4.1
+        frequency: 10
+    buoy2:
+        name: '46025'
+        coordinates:
+            latitude: 33.755
+            longitude: -119.045
+        wind_height: 3.8
+        frequency: 10
+    buoy3:
+        name: '44009'
+        coordinates:
+            latitude: 38.460
+            longitude: -74.692
+        wind_height: 3.8
+        frequency: 10
+    buoy4:
+        name: '44007'
+        coordinates:
+            latitude: 43.525
+            longitude: -70.140
+        wind_height: 4.1
+        frequency: 10
+    buoy5:
+        name: '42036'
+        coordinates:
+            latitude: 28.501
+            longitude: -84.508
+        wind_height: 4.1
+        frequency: 10
+    buoy6:
+        name: '46086'
+        coordinates:
+            latitude: 32.499
+            longitude: -118.052
+        wind_height: 4.1
+        frequency: 10
