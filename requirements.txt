@@ -1,0 +1,8 @@
+numpy
+opencv-python
+matplotlib
+Pillow
+xarray
+dask
+cfgrib
+pyyaml
