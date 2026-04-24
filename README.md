@@ -31,7 +31,11 @@ The code is designed for batch processing of multiple SAR scenes and exporting:
 
 ```text
 .
-├── wake_detection.py      # Main processing pipeline
+├── Highlight_Scene/           # Curated collection of representative wake inversion scenes
+│   ├── metadata/              # Scene metadata (time, location, etc.)
+│   └── visualization/         # 125 wake-inverted wind speed images (no Terrain Correction)
+├── sar_list_farm/             # Mapping files associating SAR scenes to specific wind farms (e.g., wf2.txt)
+├── wake_detection.py          # Main processing pipeline
 ├── region_grow.py             # Region-growing wake extraction
 ├── search_range.py            # Wake and upstream search-region construction
 ├── point_location.py          # Geometric utility functions
@@ -39,7 +43,16 @@ The code is designed for batch processing of multiple SAR scenes and exporting:
 ├── wind_farms.yml             # Wind farm coordinate configuration
 ├── README.md
 └── requirements.txt
-````
+```
+
+---
+
+## Highlight Scenes Dataset
+
+The repository includes a curated `Highlight_Scene` directory containing sample results to demonstrate the algorithm's capabilities:
+
+* **`visualization/`**: Contains 125 carefully selected, representative wake-inverted wind speed images. *Note: These visualizations have not undergone Terrain Correction.*
+* **`metadata/`**: Contains accompanying data for the highlighted visualizations, including acquisition time, geographic location, and other relevant scene information.
 
 ---
 
@@ -115,6 +128,10 @@ wind_farms:
       latitude: 54.123
       longitude: 3.456
 ```
+
+### 4. SAR-to-Wind-Farm Mapping Files
+
+The `sar_list_farm/` directory contains text files (e.g., `wf2.txt`) that explicitly list which SAR images correspond to which specific wind farms. These lists are used to guide the batch processing workflow and ensure the correct scenes are evaluated for each farm.
 
 ---
 
@@ -216,6 +233,7 @@ To ensure reproducibility, users must prepare:
 * SAR-derived wind-speed products,
 * ERA5 wind data,
 * wind farm coordinate configuration,
+* target SAR lists (`sar_list_farm`),
 * and a properly configured SNAP Python interface.
 
 ---
@@ -223,6 +241,3 @@ To ensure reproducibility, users must prepare:
 ## Citation
 
 If you use this code in academic work, please cite the corresponding paper.
-
-
-
