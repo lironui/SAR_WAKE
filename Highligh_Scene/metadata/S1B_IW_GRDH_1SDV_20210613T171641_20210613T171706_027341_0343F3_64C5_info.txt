@@ -1,0 +1,13 @@
+Copyright (C) European Space Agency (ESA) - All Rights Reserved
+------------------------------------------------------------
+SENTINEL-1 PRODUCT METADATA SUMMARY
+------------------------------------------------------------
+
+Product Name             : S1B_IW_GRDH_1SDV_20210613T171641_20210613T171706_027341_0343F3_64C5
+Platform                 : SENTINEL-1 B
+Sensor Mode              : IW
+Start Time               : 2021-06-13T17:16:41.269065
+Stop Time                : 2021-06-13T17:17:06.267501
+Orbit Number             : 27341
+Pass Direction           : ASCENDING
+Coordinates (Lat,Lon)    : 54.060287,5.082422 54.479698,9.099051 52.985401,9.483486 52.569241,5.604706

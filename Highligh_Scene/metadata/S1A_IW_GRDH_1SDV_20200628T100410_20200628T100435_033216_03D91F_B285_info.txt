@@ -1,0 +1,13 @@
+Copyright (C) European Space Agency (ESA) - All Rights Reserved
+------------------------------------------------------------
+SENTINEL-1 PRODUCT METADATA SUMMARY
+------------------------------------------------------------
+
+Product Name             : S1A_IW_GRDH_1SDV_20200628T100410_20200628T100435_033216_03D91F_B285
+Platform                 : SENTINEL-1 A
+Sensor Mode              : IW
+Start Time               : 2020-06-28T10:04:10.563210
+Stop Time                : 2020-06-28T10:04:35.561976
+Orbit Number             : 33216
+Pass Direction           : ASCENDING
+Coordinates (Lat,Lon)    : 35.237057,117.409294 35.641247,120.196579 34.138157,120.497421 33.731907,117.760468
