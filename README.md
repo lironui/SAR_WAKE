@@ -1,4 +1,4 @@
-# R2G2: SAR-Based Wind Farm Wake Detection
+# [R2G2: SAR-Based Wind Farm Wake Detection]([https://lironui.github.io/SAR_WAKE/](https://www.nature.com/articles/s44172-026-00684-7)
 
 This repository contains the core implementation of the **R2G2** framework for offshore wind farm wake detection from Sentinel-1 SAR-derived wind fields.
 
@@ -240,4 +240,8 @@ To ensure reproducibility, users must prepare:
 
 ## Citation
 
-If you use this code in academic work, please cite the corresponding paper.
+If you use this code in academic work, please cite the corresponding paper:
+
+Li, R., Zhang, J. & Zhao, X. Long-range near-surface wake signatures of offshore wind farm clusters revealed by satellite observations. Commun Eng (2026). https://doi.org/10.1038/s44172-026-00684-7
+
+
