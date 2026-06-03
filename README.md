@@ -38,7 +38,6 @@ The code is designed for batch processing of multiple SAR scenes and exporting:
 ├── wake_detection.py          # Main processing pipeline
 ├── region_grow.py             # Region-growing wake extraction
 ├── search_range.py            # Wake and upstream search-region construction
-├── point_location.py          # Geometric utility functions
 ├── wind_direction.py          # ERA5 wind speed and direction interface
 ├── wind_farms.yml             # Wind farm coordinate configuration
 ├── README.md
@@ -82,10 +81,6 @@ Defines:
 * the upstream reference region
 
 using geometric constraints and wind direction.
-
-### `point_location.py`
-
-Provides geometric helper functions for point-in-polygon tests.
 
 ### `wind_direction.py`
 
