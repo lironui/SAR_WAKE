@@ -3,6 +3,7 @@
 [![Project Website](https://img.shields.io/badge/Project-Website-44e1d0?style=for-the-badge)](https://lironui.github.io/SAR_WAKE/)
 [![Paper](https://img.shields.io/badge/Paper-Communications%20Engineering-ff775f?style=for-the-badge)](https://doi.org/10.1038/s44172-026-00684-7)
 [![GitHub](https://img.shields.io/badge/Code-SAR__WAKE-07171a?style=for-the-badge&logo=github)](https://github.com/lironui/SAR_WAKE)
+[![EMail](https://img.shields.io/badge/EMail__WAKE-07171a?style=for-the-badge&logo=email)](lironui@outlook.com)
 
 > **Explore the bilingual project website:**  
 > **https://lironui.github.io/SAR_WAKE/**
