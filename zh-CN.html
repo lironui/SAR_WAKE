@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="基于 Sentinel-1 SAR 的海上风电场长距离近地面尾流观测：论文结论、R²G³ 方法与开放场景图库。"
+    />
+    <meta name="theme-color" content="#06191d" />
+    <meta property="og:title" content="SAR WAKE｜从太空看见海上风电尾流" />
+    <meta
+      property="og:description"
+      content="7,122 景 Sentinel-1 SAR 影像揭示超过 100 km 的近地面尾流迹象。"
+    />
+    <meta property="og:image" content="assets/hero.jpg" />
+    <title>SAR WAKE｜海上风电场长距离近地面尾流</title>
+    <link rel="alternate" hreflang="en" href="index.html" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">跳到正文</a>
+
+    <header class="site-header" id="top">
+      <a class="brand" href="#top" aria-label="返回页面顶部">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>SAR WAKE</span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span>
+        <span class="sr-only">展开导航</span>
+      </button>
+      <nav id="main-nav" aria-label="主导航">
+        <a href="#findings">核心发现</a>
+        <a href="#method">方法</a>
+        <a href="#figures">论文图集</a>
+        <a href="#scenes">SAR 场景</a>
+        <a class="language-switch" href="index.html" lang="en" aria-label="Switch to English">EN</a>
+        <a class="nav-code" href="https://github.com/lironui/SAR_WAKE" target="_blank" rel="noreferrer">
+          GitHub ↗
+        </a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero">
+        <div class="hero-image" role="img" aria-label="SAR 观测下的海上风电场尾流"></div>
+        <div class="hero-shade"></div>
+        <div class="hero-content">
+          <p class="eyebrow"><span>COMMUNICATIONS ENGINEERING · 2026</span></p>
+          <h1>从太空看见<br /><em>百公里尾流</em></h1>
+          <p class="hero-deck">
+            7,122 景 Sentinel-1A/B SAR 影像揭示：大型海上风电场集群造成的
+            <strong>10 m 高度近地面尾流迹象</strong>，在有利条件下可延伸超过 100 km。
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#findings">探索研究发现</a>
+            <a
+              class="button button-ghost"
+              href="https://doi.org/10.1038/s44172-026-00684-7"
+              target="_blank"
+              rel="noreferrer"
+            >阅读论文 ↗</a>
+          </div>
+          <p class="authors">Rui Li · Jincheng Zhang · Xiaowei Zhao</p>
+        </div>
+        <a class="scroll-cue" href="#snapshot" aria-label="向下浏览">
+          <span>SCROLL</span><i></i>
+        </a>
+      </section>
+
+      <section class="snapshot" id="snapshot" aria-label="研究数据概览">
+        <div class="stat">
+          <strong>7,122</strong>
+          <span>景 SAR 影像</span>
+          <small>2020–2022</small>
+        </div>
+        <div class="stat">
+          <strong>60+</strong>
+          <span>海上风电场</span>
+          <small>欧洲与亚洲</small>
+        </div>
+        <div class="stat">
+          <strong>11.5 TB</strong>
+          <span>遥感数据</span>
+          <small>Sentinel-1A/B</small>
+        </div>
+        <div class="stat stat-accent">
+          <strong>&gt;100 km</strong>
+          <span>近地面尾流迹象</span>
+          <small>有利稳定条件下</small>
+        </div>
+      </section>
+
+      <section class="section findings" id="findings">
+        <div class="section-heading">
+          <p class="section-index">01 / KEY FINDINGS</p>
+          <h2>观测告诉我们什么？</h2>
+          <p>一次跨区域、跨年份的海上风电尾流普查，把零散个案变成了可量化的观测证据。</p>
+        </div>
+
+        <div class="finding-grid">
+          <article class="finding-card finding-card-large">
+            <span class="finding-number">01</span>
+            <div>
+              <p class="finding-kicker">LONG-RANGE SIGNATURE</p>
+              <h3>尾流影响的空间尺度，可能远超传统规划假设</h3>
+              <p>
+                多个北海案例显示，在非常稳定的边界层条件下，湍流混合受抑制，风场恢复变慢；
+                多座大型风电场沿主导风向排列时，尾流叠加还会进一步延长近地面扰动。
+              </p>
+            </div>
+            <div class="distance-rule" aria-label="尾流距离超过 100 公里">
+              <span>0</span><i></i><b>100+ km</b>
+            </div>
+          </article>
+
+          <article class="finding-card">
+            <span class="finding-number">02</span>
+            <p class="finding-kicker">MEAN DEFICIT</p>
+            <strong class="big-number">0.990 <small>m/s</small></strong>
+            <h3>平均近地面风速亏损</h3>
+            <p>相当于上游风速的 <b>12.4%</b>。这一统计来自 3,789 个下游风速更低的有效案例。</p>
+          </article>
+
+          <article class="finding-card">
+            <span class="finding-number">03</span>
+            <p class="finding-kicker">OBSERVED CASES</p>
+            <strong class="big-number">64.0<small>%</small></strong>
+            <h3>有效样本出现下游减速</h3>
+            <p>5,920 个定量样本中，3,789 个呈现下游风速低于上游；约 10% 的案例减速超过 30%。</p>
+          </article>
+
+          <article class="finding-card finding-card-wide">
+            <span class="finding-number">04</span>
+            <div>
+              <p class="finding-kicker">CROSS-BOUNDARY INTERACTION</p>
+              <h3>尾流不认识国界</h3>
+              <p>
+                SAR 影像捕捉到跨越专属经济区的近地面尾流相互作用。北海等高密度开发海域需要把
+                邻国上游项目纳入规划视野，也需要跨国协调潜在的尾流损失与开发冲突。
+              </p>
+            </div>
+            <blockquote>“大型风电场尾流正从局地工程效应，显现出区域尺度的流场特征。”</blockquote>
+          </article>
+        </div>
+      </section>
+
+      <section class="section method" id="method">
+        <div class="section-heading section-heading-light">
+          <p class="section-index">02 / METHOD</p>
+          <h2>从雷达回波到尾流区域</h2>
+          <p>论文提出 Restricted-Region Gradient-Guided Growing（R²G³），在统一流程中提取上游参考区与下游尾流区。</p>
+        </div>
+
+        <ol class="pipeline">
+          <li>
+            <span>01</span>
+            <div><b>Sentinel-1 GRD</b><small>IW 模式 SAR 影像</small></div>
+          </li>
+          <li>
+            <span>02</span>
+            <div><b>校准与清理</b><small>去噪、轨道校正、陆地与亮目标掩膜</small></div>
+          </li>
+          <li>
+            <span>03</span>
+            <div><b>CMOD5.N 反演</b><small>结合 ERA5 风向，得到 500 m 分辨率 10 m 风速</small></div>
+          </li>
+          <li>
+            <span>04</span>
+            <div><b>R²G³ 检测</b><small>受限搜索区 + 梯度约束 + 区域生长</small></div>
+          </li>
+          <li>
+            <span>05</span>
+            <div><b>统计比较</b><small>上游参考风速 vs. 下游尾流风速</small></div>
+          </li>
+        </ol>
+
+        <div class="method-note">
+          <div>
+            <p class="finding-kicker">VALIDATION</p>
+            <strong>945</strong>
+            <span>组浮标—SAR 匹配观测</span>
+          </div>
+          <p>
+            六个 NDBC 浮标站用于验证 SAR 风速反演。各站相关系数均高于 0.9，
+            支持该流程用于分析大范围海域中的相对风速变化。
+          </p>
+          <a href="https://github.com/lironui/SAR_WAKE" target="_blank" rel="noreferrer">查看 R²G³ 代码 ↗</a>
+        </div>
+      </section>
+
+      <section class="section figure-section" id="figures">
+        <div class="section-heading">
+          <p class="section-index">03 / PAPER FIGURES</p>
+          <h2>论文图集</h2>
+          <p>点击任意图片可放大查看。图片来自作者提供的论文原图，图注为中文摘要。</p>
+        </div>
+
+        <div class="figure-feature">
+          <button class="image-button" data-lightbox="assets/paper/fig5.png" data-title="图 5｜超过 100 km 的近地面尾流迹象">
+            <img src="assets/paper/fig5.png" alt="六组长距离近地面尾流观测案例" loading="lazy" />
+          </button>
+          <div>
+            <span class="figure-label">FIGURE 05 · FEATURED</span>
+            <h3>长距离近地面尾流</h3>
+            <p>
+              六组北海案例展示 SAR 反演的 10 m 风速场。蓝色箭头标示人工判定的尾流起止点，
+              用于估算传播距离。深色区域代表较低风速。
+            </p>
+            <small>Source imagery: European Space Agency (ESA)</small>
+          </div>
+        </div>
+
+        <div class="figure-grid">
+          <article>
+            <button class="image-button" data-lightbox="assets/paper/fig1.png" data-title="图 1｜SAR 数据的时空分布">
+              <img src="assets/paper/fig1.png" alt="风电场与 SAR 数据的空间和月度分布" loading="lazy" />
+            </button>
+            <span>FIG. 01</span><h3>研究范围</h3>
+            <p>欧洲与亚洲 60 多座海上风电场，以及 2020–2022 年的月度样本分布。</p>
+          </article>
+          <article>
+            <button class="image-button" data-lightbox="assets/paper/fig2.png" data-title="图 2｜SAR 风速反演流程">
+              <img src="assets/paper/fig2.png" alt="SAR 风速反演流程图" loading="lazy" />
+            </button>
+            <span>FIG. 02</span><h3>风速反演</h3>
+            <p>Sentinel-1 预处理、ERA5 风向与 CMOD5.N 地球物理模型函数组成的流程。</p>
+          </article>
+          <article>
+            <button class="image-button" data-lightbox="assets/paper/fig3.png" data-title="图 3｜SAR 风速与浮标观测对比">
+              <img src="assets/paper/fig3.png" alt="六个浮标站点的风速验证散点图" loading="lazy" />
+            </button>
+            <span>FIG. 03</span><h3>浮标验证</h3>
+            <p>六个 NDBC 站点的 SAR 反演风速与实测风速对比，虚线为 1:1 关系。</p>
+          </article>
+          <article>
+            <button class="image-button" data-lightbox="assets/paper/fig4.png" data-title="图 4｜R²G³ 尾流识别流程">
+              <img src="assets/paper/fig4.png" alt="R2G3 上游和尾流区域检测流程" loading="lazy" />
+            </button>
+            <span>FIG. 04</span><h3>R²G³ 检测</h3>
+            <p>梯度分析、几何限制与区域生长共同识别风电场、上游与尾流区域。</p>
+          </article>
+          <article>
+            <button class="image-button" data-lightbox="assets/paper/fig6.png" data-title="图 6｜风电场间尾流相互作用">
+              <img src="assets/paper/fig6.png" alt="国内和跨国风电场尾流相互作用案例" loading="lazy" />
+            </button>
+            <span>FIG. 06</span><h3>跨场与跨境影响</h3>
+            <p>英国、德国、中国等海域的相邻风电场尾流相互作用，包括跨越国界的案例。</p>
+          </article>
+          <article>
+            <button class="image-button" data-lightbox="assets/paper/fig7.png" data-title="图 7｜近地面风速亏损分布">
+              <img src="assets/paper/fig7.png" alt="近地面风速亏损的统计分布" loading="lazy" />
+            </button>
+            <span>FIG. 07</span><h3>亏损分布</h3>
+            <p>3,789 个样本的风速亏损区间，以及亏损随上游风速变化的关系。</p>
+          </article>
+          <article>
+            <button class="image-button" data-lightbox="assets/paper/fig8.png" data-title="图 8｜月平均尾流风速亏损">
+              <img src="assets/paper/fig8.png" alt="尾流风速亏损的月度变化" loading="lazy" />
+            </button>
+            <span>FIG. 08</span><h3>季节变化</h3>
+            <p>夏季更常出现较大亏损，与研究区较低的月平均背景风速相呼应。</p>
+          </article>
+          <article>
+            <button class="image-button" data-lightbox="assets/paper/fig9.png" data-title="图 9｜边界模糊的 SAR 尾流案例">
+              <img src="assets/paper/fig9.png" alt="尾流边界不清晰的 SAR 案例" loading="lazy" />
+            </button>
+            <span>FIG. 09</span><h3>识别挑战</h3>
+            <p>真实 SAR 风场中的尾流边界并不总是清晰，提示自动识别仍存在不确定性。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section scenes" id="scenes">
+        <div class="section-heading section-heading-light">
+          <p class="section-index">04 / OPEN SAR SCENES</p>
+          <h2>来自 GitHub 的精选 SAR 场景</h2>
+          <p>跨越 2020–2022 年的 Sentinel-1A/B 代表性近地面风速场。滑动浏览，点击放大。</p>
+        </div>
+        <div class="scene-toolbar">
+          <div>
+            <button class="scene-filter is-active" data-filter="all">全部</button>
+            <button class="scene-filter" data-filter="S1A">Sentinel-1A</button>
+            <button class="scene-filter" data-filter="S1B">Sentinel-1B</button>
+          </div>
+          <span><i></i> 深色带状区域通常对应较低的反演风速</span>
+        </div>
+        <div class="scene-grid" id="scene-grid"></div>
+        <div class="scene-footer">
+          <p>开放仓库提供算法源码、SAR 场景清单、风电场配置以及精选可视化结果。</p>
+          <a class="button button-coral" href="https://github.com/lironui/SAR_WAKE/tree/main/Highligh_Scene" target="_blank" rel="noreferrer">浏览完整场景库 ↗</a>
+        </div>
+      </section>
+
+      <section class="section interpretation" id="interpretation">
+        <div class="section-heading">
+          <p class="section-index">05 / INTERPRETATION</p>
+          <h2>如何正确解读</h2>
+        </div>
+        <div class="interpretation-grid">
+          <article>
+            <span>10 m</span>
+            <h3>这是近地面风场，不是轮毂高度</h3>
+            <p>SAR 结果对应 10 m 中性风速；不能在缺少模型或现场测量时直接外推到 50–150 m 的转子层。</p>
+          </article>
+          <article>
+            <span>ΔU</span>
+            <h3>统计结果不是单个项目的确定损失</h3>
+            <p>0.990 m/s 是数千景独立观测的气候态平均值，不代表某一对风电场或某一气象条件下的固定亏损。</p>
+          </article>
+          <article>
+            <span>R²G³</span>
+            <h3>真实边界仍有不确定性</h3>
+            <p>算法仍依赖人工设置的参数；成像质量、侧风、运行状态和低风速反演误差都可能影响检测。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="citation">
+        <div>
+          <p class="section-index">PAPER & CODE</p>
+          <h2>继续阅读与复现</h2>
+        </div>
+        <div class="citation-body">
+          <p>
+            <b>Li, R., Zhang, J. & Zhao, X.</b><br />
+            Long-range near-surface wake signatures of offshore wind farm clusters revealed by satellite observations.
+            <i>Communications Engineering</i> 5, 144 (2026).
+          </p>
+          <div>
+            <a href="https://doi.org/10.1038/s44172-026-00684-7" target="_blank" rel="noreferrer">DOI ↗</a>
+            <a href="https://github.com/lironui/SAR_WAKE" target="_blank" rel="noreferrer">CODE ↗</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="brand footer-brand"><span class="brand-mark" aria-hidden="true"></span><span>SAR WAKE</span></div>
+      <p>Research showcase for satellite-observed offshore wind farm wake signatures.</p>
+      <p>Paper figures © the authors · Source SAR imagery: ESA</p>
+    </footer>
+
+    <dialog class="lightbox" id="lightbox" aria-label="图片预览">
+      <button class="lightbox-close" aria-label="关闭预览">×</button>
+      <img src="" alt="" />
+      <p></p>
+    </dialog>
+  </body>
+</html>

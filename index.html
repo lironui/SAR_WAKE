@@ -1,52 +1,355 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <title>SAR-WAKE</title>
-  <style>
-    body { font-family: Arial, sans-serif; max-width: 900px; margin: 40px auto; line-height: 1.6; }
-    h1 { color: #1f4e79; }
-    a { color: #1f77b4; }
-  </style>
-</head>
-<body>
-  <h1>SAR-WAKE</h1>
-  <p><strong>A SAR-based offshore wind-farm wake detection framework</strong></p>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Long-range near-surface wake signatures of offshore wind farm clusters observed with Sentinel-1 SAR: findings, R²G³ method, and open scene gallery."
+    />
+    <meta name="theme-color" content="#06191d" />
+    <meta property="og:title" content="SAR WAKE | Offshore wind wakes from space" />
+    <meta
+      property="og:description"
+      content="7,122 Sentinel-1 SAR scenes reveal near-surface wake signatures extending beyond 100 km."
+    />
+    <meta property="og:image" content="assets/hero.jpg" />
+    <title>SAR WAKE | Long-range offshore wind farm wakes</title>
+    <link rel="alternate" hreflang="zh-CN" href="zh-CN.html" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-  <p>
-    SAR-WAKE is an open-source research code package for detecting offshore
-    wind-farm wake effects using Sentinel-1 SAR imagery.
-  </p>
+    <header class="site-header" id="top">
+      <a class="brand" href="#top" aria-label="Back to top">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>SAR WAKE</span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span>
+        <span class="sr-only">Open navigation</span>
+      </button>
+      <nav id="main-nav" aria-label="Main navigation">
+        <a href="#findings">Findings</a>
+        <a href="#method">Method</a>
+        <a href="#figures">Paper figures</a>
+        <a href="#scenes">SAR scenes</a>
+        <a class="language-switch" href="zh-CN.html" lang="zh-CN" aria-label="切换到中文">中文</a>
+        <a class="nav-code" href="https://github.com/lironui/SAR_WAKE" target="_blank" rel="noreferrer">
+          GitHub ↗
+        </a>
+      </nav>
+    </header>
 
-  <h2>Overview</h2>
-  <p>
-    This project provides a reproducible workflow for offshore wind-farm wake
-    detection, including upstream/reference area identification, wake-affected
-    area detection, and wind-direction-guided region growing.
-  </p>
+    <main id="main">
+      <section class="hero">
+        <div class="hero-image" role="img" aria-label="Offshore wind farm wakes observed by SAR"></div>
+        <div class="hero-shade"></div>
+        <div class="hero-content">
+          <p class="eyebrow"><span>COMMUNICATIONS ENGINEERING · 2026</span></p>
+          <h1>Seeing <em>100-km wakes</em><br />from space</h1>
+          <p class="hero-deck">
+            7,122 Sentinel-1A/B SAR scenes reveal that
+            <strong>near-surface wake signatures at 10 m height</strong> from large offshore wind farm
+            clusters can persist for more than 100 km under favorable conditions.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#findings">Explore the findings</a>
+            <a
+              class="button button-ghost"
+              href="https://doi.org/10.1038/s44172-026-00684-7"
+              target="_blank"
+              rel="noreferrer"
+            >Read the paper ↗</a>
+          </div>
+          <p class="authors">Rui Li · Jincheng Zhang · Xiaowei Zhao</p>
+        </div>
+        <a class="scroll-cue" href="#snapshot" aria-label="Scroll down">
+          <span>SCROLL</span><i></i>
+        </a>
+      </section>
 
-  <h2>Features</h2>
-  <ul>
-    <li>Sentinel-1 SAR image processing</li>
-    <li>Wind-direction-guided wake detection</li>
-    <li>Region-growing based wake segmentation</li>
-    <li>Research-ready reproducible workflow</li>
-  </ul>
+      <section class="snapshot" id="snapshot" aria-label="Study snapshot">
+        <div class="stat">
+          <strong>7,122</strong>
+          <span>SAR scenes</span>
+          <small>2020–2022</small>
+        </div>
+        <div class="stat">
+          <strong>60+</strong>
+          <span>Offshore wind farms</span>
+          <small>Europe &amp; Asia</small>
+        </div>
+        <div class="stat">
+          <strong>11.5 TB</strong>
+          <span>Remote-sensing data</span>
+          <small>Sentinel-1A/B</small>
+        </div>
+        <div class="stat stat-accent">
+          <strong>&gt;100 km</strong>
+          <span>Near-surface wake signatures</span>
+          <small>Under favorable stable conditions</small>
+        </div>
+      </section>
 
-  <h2>Installation</h2>
-  <pre><code>git clone https://github.com/lironui/SAR_WAKE.git
-cd SAR_WAKE
-pip install -r requirements.txt</code></pre>
+      <section class="section findings" id="findings">
+        <div class="section-heading">
+          <p class="section-index">01 / KEY FINDINGS</p>
+          <h2>What do the observations tell us?</h2>
+          <p>A multi-regional, multi-year census turns isolated cases into quantifiable observational evidence.</p>
+        </div>
 
-  <h2>Code</h2>
-  <p>
-    View the source code on
-    <a href="https://github.com/lironui/SAR_WAKE">GitHub</a>.
-  </p>
+        <div class="finding-grid">
+          <article class="finding-card finding-card-large">
+            <span class="finding-number">01</span>
+            <div>
+              <p class="finding-kicker">LONG-RANGE SIGNATURE</p>
+              <h3>The spatial reach of wakes may exceed conventional planning assumptions</h3>
+              <p>
+                North Sea cases show that very stable boundary layers suppress turbulent mixing and slow wind-field
+                recovery. When several large farms align with the prevailing wind, superposed wakes can extend the
+                near-surface disturbance even farther.
+              </p>
+            </div>
+            <div class="distance-rule" aria-label="Wake distance beyond 100 kilometers">
+              <span>0</span><i></i><b>100+ km</b>
+            </div>
+          </article>
 
-  <h2>Citation</h2>
-  <p>
-    If you use this code, please cite the associated paper.
-  </p>
-</body>
+          <article class="finding-card">
+            <span class="finding-number">02</span>
+            <p class="finding-kicker">MEAN DEFICIT</p>
+            <strong class="big-number">0.990 <small>m/s</small></strong>
+            <h3>Mean near-surface wind-speed deficit</h3>
+            <p>Equivalent to <b>12.4%</b> of the upstream wind speed, based on 3,789 valid cases with slower downstream winds.</p>
+          </article>
+
+          <article class="finding-card">
+            <span class="finding-number">03</span>
+            <p class="finding-kicker">OBSERVED CASES</p>
+            <strong class="big-number">64.0<small>%</small></strong>
+            <h3>Valid samples showing downstream slowdown</h3>
+            <p>Of 5,920 quantitative samples, 3,789 had lower downstream speeds; about 10% showed deficits above 30%.</p>
+          </article>
+
+          <article class="finding-card finding-card-wide">
+            <span class="finding-number">04</span>
+            <div>
+              <p class="finding-kicker">CROSS-BOUNDARY INTERACTION</p>
+              <h3>Wakes do not stop at borders</h3>
+              <p>
+                SAR imagery captures near-surface wake interactions crossing exclusive economic zones. In densely
+                developed basins such as the North Sea, planning must account for upstream projects in neighboring
+                countries and coordinate potential wake losses across borders.
+              </p>
+            </div>
+            <blockquote>“Large wind-farm wakes increasingly resemble a regional flow phenomenon, not merely a local engineering effect.”</blockquote>
+          </article>
+        </div>
+      </section>
+
+      <section class="section method" id="method">
+        <div class="section-heading section-heading-light">
+          <p class="section-index">02 / METHOD</p>
+          <h2>From radar backscatter to wake regions</h2>
+          <p>The paper introduces Restricted-Region Gradient-Guided Growing (R²G³) to extract upstream reference and downstream wake regions in a consistent workflow.</p>
+        </div>
+
+        <ol class="pipeline">
+          <li>
+            <span>01</span>
+            <div><b>Sentinel-1 GRD</b><small>IW-mode SAR imagery</small></div>
+          </li>
+          <li>
+            <span>02</span>
+            <div><b>Calibration &amp; cleaning</b><small>Denoising, orbit correction, land and bright-target masks</small></div>
+          </li>
+          <li>
+            <span>03</span>
+            <div><b>CMOD5.N retrieval</b><small>ERA5 wind direction and 10 m wind speed at 500 m resolution</small></div>
+          </li>
+          <li>
+            <span>04</span>
+            <div><b>R²G³ detection</b><small>Restricted search + gradient constraint + region growing</small></div>
+          </li>
+          <li>
+            <span>05</span>
+            <div><b>Statistical comparison</b><small>Upstream reference speed vs. downstream wake speed</small></div>
+          </li>
+        </ol>
+
+        <div class="method-note">
+          <div>
+            <p class="finding-kicker">VALIDATION</p>
+            <strong>945</strong>
+            <span>Buoy–SAR matched observations</span>
+          </div>
+          <p>
+            Six NDBC buoy stations validate the SAR wind retrieval. Correlations above 0.9 at every station
+            support the workflow for analyzing relative wind-speed changes over large offshore areas.
+          </p>
+          <a href="https://github.com/lironui/SAR_WAKE" target="_blank" rel="noreferrer">View the R²G³ code ↗</a>
+        </div>
+      </section>
+
+      <section class="section figure-section" id="figures">
+        <div class="section-heading">
+          <p class="section-index">03 / PAPER FIGURES</p>
+          <h2>Paper figures</h2>
+          <p>Select any image to enlarge it. Figures are reproduced from the authors’ original artwork with concise summaries.</p>
+        </div>
+
+        <div class="figure-feature">
+          <button class="image-button" data-lightbox="assets/paper/fig5.png" data-title="Figure 5 | Near-surface wake signatures beyond 100 km">
+            <img src="assets/paper/fig5.png" alt="Six observed cases of long-range near-surface wakes" loading="lazy" />
+          </button>
+          <div>
+            <span class="figure-label">FIGURE 05 · FEATURED</span>
+            <h3>Long-range near-surface wakes</h3>
+            <p>
+              Six North Sea cases show SAR-retrieved wind fields at 10 m. Blue arrows mark manually identified
+              wake start and end points used to estimate propagation distance. Darker areas indicate lower wind speed.
+            </p>
+            <small>Source imagery: European Space Agency (ESA)</small>
+          </div>
+        </div>
+
+        <div class="figure-grid">
+          <article>
+            <button class="image-button" data-lightbox="assets/paper/fig1.png" data-title="Figure 1 | Spatial and temporal distribution of SAR data">
+              <img src="assets/paper/fig1.png" alt="Spatial and monthly distribution of wind farms and SAR data" loading="lazy" />
+            </button>
+            <span>FIG. 01</span><h3>Study coverage</h3>
+            <p>More than 60 offshore wind farms across Europe and Asia, with monthly sampling from 2020–2022.</p>
+          </article>
+          <article>
+            <button class="image-button" data-lightbox="assets/paper/fig2.png" data-title="Figure 2 | SAR wind-speed retrieval workflow">
+              <img src="assets/paper/fig2.png" alt="SAR wind-speed retrieval workflow" loading="lazy" />
+            </button>
+            <span>FIG. 02</span><h3>Wind retrieval</h3>
+            <p>Sentinel-1 preprocessing, ERA5 wind direction, and the CMOD5.N geophysical model function.</p>
+          </article>
+          <article>
+            <button class="image-button" data-lightbox="assets/paper/fig3.png" data-title="Figure 3 | SAR wind speeds compared with buoy observations">
+              <img src="assets/paper/fig3.png" alt="Wind-speed validation scatter plots for six buoy stations" loading="lazy" />
+            </button>
+            <span>FIG. 03</span><h3>Buoy validation</h3>
+            <p>SAR-retrieved and measured wind speeds at six NDBC stations; dashed lines show the 1:1 relationship.</p>
+          </article>
+          <article>
+            <button class="image-button" data-lightbox="assets/paper/fig4.png" data-title="Figure 4 | R²G³ wake-detection workflow">
+              <img src="assets/paper/fig4.png" alt="R2G3 workflow for detecting upstream and wake regions" loading="lazy" />
+            </button>
+            <span>FIG. 04</span><h3>R²G³ detection</h3>
+            <p>Gradient analysis, geometric constraints, and region growing identify farm, upstream, and wake regions.</p>
+          </article>
+          <article>
+            <button class="image-button" data-lightbox="assets/paper/fig6.png" data-title="Figure 6 | Wake interactions between wind farms">
+              <img src="assets/paper/fig6.png" alt="Domestic and cross-border wind-farm wake interactions" loading="lazy" />
+            </button>
+            <span>FIG. 06</span><h3>Inter-farm and cross-border impacts</h3>
+            <p>Wake interactions among neighboring farms in UK, German, Chinese, and transnational waters.</p>
+          </article>
+          <article>
+            <button class="image-button" data-lightbox="assets/paper/fig7.png" data-title="Figure 7 | Distribution of near-surface wind-speed deficits">
+              <img src="assets/paper/fig7.png" alt="Statistical distribution of near-surface wind-speed deficits" loading="lazy" />
+            </button>
+            <span>FIG. 07</span><h3>Deficit distribution</h3>
+            <p>Wind-speed deficit intervals across 3,789 samples and their relationship with upstream wind speed.</p>
+          </article>
+          <article>
+            <button class="image-button" data-lightbox="assets/paper/fig8.png" data-title="Figure 8 | Monthly mean wake-induced wind-speed deficit">
+              <img src="assets/paper/fig8.png" alt="Monthly variation in wake-induced wind-speed deficit" loading="lazy" />
+            </button>
+            <span>FIG. 08</span><h3>Seasonal variation</h3>
+            <p>Larger deficits occur more often in summer, consistent with lower monthly background wind speeds.</p>
+          </article>
+          <article>
+            <button class="image-button" data-lightbox="assets/paper/fig9.png" data-title="Figure 9 | SAR wake cases with ambiguous boundaries">
+              <img src="assets/paper/fig9.png" alt="SAR cases with ambiguous wake boundaries" loading="lazy" />
+            </button>
+            <span>FIG. 09</span><h3>Detection challenge</h3>
+            <p>Wake boundaries are not always distinct in real SAR wind fields, leaving uncertainty in automated detection.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section scenes" id="scenes">
+        <div class="section-heading section-heading-light">
+          <p class="section-index">04 / OPEN SAR SCENES</p>
+          <h2>Selected SAR scenes from GitHub</h2>
+          <p>Representative Sentinel-1A/B near-surface wind fields from 2020–2022. Browse and select to enlarge.</p>
+        </div>
+        <div class="scene-toolbar">
+          <div>
+            <button class="scene-filter is-active" data-filter="all">All</button>
+            <button class="scene-filter" data-filter="S1A">Sentinel-1A</button>
+            <button class="scene-filter" data-filter="S1B">Sentinel-1B</button>
+          </div>
+          <span><i></i> Dark bands generally correspond to lower retrieved wind speeds</span>
+        </div>
+        <div class="scene-grid" id="scene-grid"></div>
+        <div class="scene-footer">
+          <p>The open repository provides algorithm source code, SAR scene lists, wind-farm configuration, and selected visualizations.</p>
+          <a class="button button-coral" href="https://github.com/lironui/SAR_WAKE/tree/main/Highligh_Scene" target="_blank" rel="noreferrer">Browse the full scene library ↗</a>
+        </div>
+      </section>
+
+      <section class="section interpretation" id="interpretation">
+        <div class="section-heading">
+          <p class="section-index">05 / INTERPRETATION</p>
+          <h2>How to interpret the results</h2>
+        </div>
+        <div class="interpretation-grid">
+          <article>
+            <span>10 m</span>
+            <h3>Near-surface flow is not hub-height flow</h3>
+            <p>SAR results represent neutral wind speed at 10 m and cannot be extrapolated directly to the 50–150 m rotor layer without modeling or in-situ measurements.</p>
+          </article>
+          <article>
+            <span>ΔU</span>
+            <h3>A statistical result is not a project-specific loss</h3>
+            <p>0.990 m/s is a climatological mean across thousands of independent observations, not a fixed loss for any farm pair or weather condition.</p>
+          </article>
+          <article>
+            <span>R²G³</span>
+            <h3>Real-world boundaries remain uncertain</h3>
+            <p>The algorithm still uses manually selected parameters; image quality, crosswinds, operating state, and low-speed retrieval error can all affect detection.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="citation">
+        <div>
+          <p class="section-index">PAPER & CODE</p>
+          <h2>Read more and reproduce the work</h2>
+        </div>
+        <div class="citation-body">
+          <p>
+            <b>Li, R., Zhang, J. & Zhao, X.</b><br />
+            Long-range near-surface wake signatures of offshore wind farm clusters revealed by satellite observations.
+            <i>Communications Engineering</i> 5, 144 (2026).
+          </p>
+          <div>
+            <a href="https://doi.org/10.1038/s44172-026-00684-7" target="_blank" rel="noreferrer">DOI ↗</a>
+            <a href="https://github.com/lironui/SAR_WAKE" target="_blank" rel="noreferrer">CODE ↗</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="brand footer-brand"><span class="brand-mark" aria-hidden="true"></span><span>SAR WAKE</span></div>
+      <p>Research showcase for satellite-observed offshore wind farm wake signatures.</p>
+      <p>Paper figures © the authors · Source SAR imagery: ESA</p>
+    </footer>
+
+    <dialog class="lightbox" id="lightbox" aria-label="Image preview">
+      <button class="lightbox-close" aria-label="Close preview">×</button>
+      <img src="" alt="" />
+      <p></p>
+    </dialog>
+  </body>
 </html>
